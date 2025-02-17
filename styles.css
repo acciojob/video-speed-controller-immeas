@@ -1,5 +1,3 @@
-
-/* Your CSS Code here. */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -48,7 +46,7 @@ input[type="range"] {
   height: 10px;
 }
 
-#progress__filled {
+.progress__filled {
   height: 100%;
   background-color: #ff6347;
   width: 0;

@@ -1,12 +1,19 @@
 const video = document.getElementById('video');
 const playPauseButton = document.getElementById('playPause');
 const progress = document.getElementById('progress');
-const progressFilled = document.getElementById('progress__filled');
+const progressFilled = document.querySelector('.progress__filled');
 const rewindButton = document.getElementById('rewind');
 const fastForwardButton = document.getElementById('fastForward');
 const volumeInput = document.getElementById('volume');
 const playbackSpeedInput = document.getElementById('playbackSpeed');
 const speedValue = document.getElementById('speedValue');
+
+// Initial play/pause button state
+if (video.paused) {
+  playPauseButton.textContent = '►';
+} else {
+  playPauseButton.textContent = '❚ ❚';
+}
 
 // Play/Pause button functionality
 playPauseButton.addEventListener('click', () => {
