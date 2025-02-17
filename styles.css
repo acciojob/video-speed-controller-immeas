@@ -1,2 +1,59 @@
 
 /* Your CSS Code here. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  width: 800px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin: 20px auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="range"] {
+  margin: 0 10px;
+}
+
+#progress {
+  width: 100%;
+  height: 10px;
+}
+
+#progress__filled {
+  height: 100%;
+  background-color: #ff6347;
+  width: 0;
+}
+
+#speedValue {
+  margin-left: 10px;
+}
